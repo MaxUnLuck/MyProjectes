@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1214M-16\\Documents\\2-\u0418\u0421\u041F\u0434\\\u0421\u0443\u043B\u0435\u0439\u043C\u0430\u043D\u043E\u0432\\WpfApp8_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5B6A7A-2FA1-4C5A-95DE-1748EEEB85CD}|WpfApp8_1.csproj|c:\\users\\1214m-16\\documents\\2-\u0438\u0441\u043F\u0434\\\u0441\u0443\u043B\u0435\u0439\u043C\u0430\u043D\u043E\u0432\\wpfapp8_1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FF5B6A7A-2FA1-4C5A-95DE-1748EEEB85CD}|WpfApp8_1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 298,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\1214M-16\\Documents\\2-\u0418\u0421\u041F\u0434\\\u0421\u0443\u043B\u0435\u0439\u043C\u0430\u043D\u043E\u0432\\WpfApp8_1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\1214M-16\\Documents\\2-\u0418\u0421\u041F\u0434\\\u0421\u0443\u043B\u0435\u0439\u043C\u0430\u043D\u043E\u0432\\WpfApp8_1\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T12:21:28.049Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
