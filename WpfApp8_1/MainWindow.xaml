@@ -39,6 +39,7 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
+        <Label Content="     !На вход отводится одна минута!" HorizontalAlignment="Center" Height="44" Margin="0,307,0,0" VerticalAlignment="Top" Width="300" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
 
     </Grid>
 </Window>
