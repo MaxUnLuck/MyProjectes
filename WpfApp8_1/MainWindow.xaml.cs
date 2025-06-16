@@ -56,7 +56,7 @@ namespace WpfApp8_1
         {
             try
             {
-                if(StopTimer() > TimeSpan.FromMinutes(1))
+                if(StopTimer() > TimeSpan.FromSeconds(10))
                 {
                     MessageBox.Show("Вы регестрировались больше минуты, повторите попытку!", "Отказано!", MessageBoxButton.OK, MessageBoxImage.Warning);
                     ResetTimer();
