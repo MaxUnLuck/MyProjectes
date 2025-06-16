@@ -27,25 +27,16 @@ namespace WpfApp8_1
         Stopwatch stopwatch = new Stopwatch();
         public void StartTimer()
         {
-            if (!stopwatch.IsRunning)
-            {
-                stopwatch.Start();
-            }
+            stopwatch.Start();
         }
         public TimeSpan StopTimer()
         {
-            if (!stopwatch.IsRunning)
-            {
-                stopwatch.Stop();
-            }
+            stopwatch.Stop();
             return stopwatch.Elapsed;
         }
         public TimeSpan ResetTimer()
         {
-            if (!stopwatch.IsRunning)
-            {
-                stopwatch.Reset();
-            }
+            stopwatch.Reset();
             return stopwatch.Elapsed;
         }
         public int GetTimer()
