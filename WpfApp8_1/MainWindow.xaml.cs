@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using System.Windows.Threading;
 
 namespace WpfApp8_1
 {
@@ -22,6 +23,7 @@ namespace WpfApp8_1
 
     public partial class MainWindow : Window
     {
+        DispatcherTimer timer = new DispatcherTimer();
         Stopwatch stopwatch = new Stopwatch();
         public void StartTimer()
         {
@@ -46,17 +48,28 @@ namespace WpfApp8_1
             }
             return stopwatch.Elapsed;
         }
+        public int GetTimer()
+        {
+            return Convert.ToInt32(stopwatch.ElapsedMilliseconds / 1000);
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            TimerBox.Text = Convert.ToString(GetTimer());
+        }
         public MainWindow()
         {
             InitializeComponent();
             StartTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;  // Метод, который будет вызываться при каждом тике таймера  
+            timer.Start();  // Запуск таймера  
         }
 
         private void AcceptButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                if(StopTimer() > TimeSpan.FromSeconds(10))
+                if(StopTimer() > TimeSpan.FromSeconds(60))
                 {
                     MessageBox.Show("Вы регестрировались больше минуты, повторите попытку!", "Отказано!", MessageBoxButton.OK, MessageBoxImage.Warning);
                     ResetTimer();
@@ -78,7 +91,7 @@ namespace WpfApp8_1
                 // Имитация проверки данных в БД
                 if (login == "admin" && password == "12345")
                 {
-                    MessageBox.Show("Успешная авторизация!", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show($"Успешная авторизация, за {GetTimer()} секунд!", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
 
                     GeneralWindow generalWindow = new GeneralWindow();
                     generalWindow.Show();

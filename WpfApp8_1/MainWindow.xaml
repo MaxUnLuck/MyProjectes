@@ -39,7 +39,16 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <Label Content="     !На вход отводится одна минута!" HorizontalAlignment="Center" Height="44" Margin="0,307,0,0" VerticalAlignment="Top" Width="300" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
+        <Label Content="     !На вход отводится одна минута!" Height="44" Margin="0,307,0,0" VerticalAlignment="Top" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="12"/>
+        <Label Content="Время:" HorizontalAlignment="Left" Height="44" Margin="50,0,0,0" VerticalAlignment="Top" Width="100" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
+        <TextBox x:Name="TimerBox" HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontFamily="Cascadia Code" FontSize="36" Margin="150,0,0,0" IsReadOnly="True">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBBBBBB" Offset="0"/>
+                    <GradientStop Color="#FFDEDEDE" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
 
     </Grid>
 </Window>

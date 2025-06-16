@@ -30,12 +30,15 @@
             </DataGrid.Background>
         </DataGrid>
         <Label Content="Столбцы:" HorizontalAlignment="Left" Margin="15,0,0,202" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <TextBox HorizontalAlignment="Left" Margin="280,0,0,156" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <Label Content="Новое значение:" HorizontalAlignment="Left" Margin="15,0,0,156" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Left" Margin="280,0,0,132" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <Label Content="Новое значение:" HorizontalAlignment="Left" Margin="15,0,0,132" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
         <ComboBox HorizontalAlignment="Left" Margin="280,0,0,202" VerticalAlignment="Bottom" Width="120" Height="30" FontFamily="Cascadia Code" FontSize="20">
-            <ComboBoxItem Content="Бизнес класс"/>
-            <ComboBoxItem Content="Стандарт"/>
-            <ComboBoxItem Content="Эконом класс"/>
+            <ComboBoxItem Content="id"/>
+            <ComboBoxItem Content="Логин"/>
+            <ComboBoxItem Content="Пароль"/>
+            <ComboBoxItem Content="ФИО"/>
+            <ComboBoxItem Content="Роль"/>
+            <ComboBoxItem Content="Удален"/>
         </ComboBox>
         <Button x:Name="AcceptButton" Content="Готово" HorizontalAlignment="Right" Height="50" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
             <Button.Background>
@@ -45,5 +48,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Label Content="id пользователя:" HorizontalAlignment="Left" Margin="15,0,0,167" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Left" Margin="280,0,0,167" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
