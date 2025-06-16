@@ -73,9 +73,25 @@ namespace WpfApp8_1
                 string password = PasswordBox.Password;
 
                 // Проверка на пустые поля
-                if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
+                if (string.IsNullOrWhiteSpace(login) && string.IsNullOrWhiteSpace(password))
                 {
-                    MessageBox.Show("Введите логин и пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Введите логин и пароль!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    ResetTimer();
+                    StartTimer();
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(login))
+                {
+                    MessageBox.Show("Введите логин!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    ResetTimer();
+                    StartTimer();
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(password))
+                {
+                    MessageBox.Show("Введите пароль!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
                     ResetTimer();
                     StartTimer();
                     return;
@@ -92,7 +108,7 @@ namespace WpfApp8_1
                 }
                 else
                 {
-                    MessageBox.Show("Неверный логин или пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Неверный логин или пароль!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Error);
                     ResetTimer();
                     StartTimer();
                 }
