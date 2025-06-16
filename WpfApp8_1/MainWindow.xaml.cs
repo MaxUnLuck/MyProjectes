@@ -50,10 +50,10 @@ namespace WpfApp8_1
         public MainWindow()
         {
             InitializeComponent();
-            StartTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;  // Метод, который будет вызываться при каждом тике таймера  
-            timer.Start();  // Запуск таймера  
+            timer.Start();  // Запуск таймера
+            StartTimer();
         }
 
         private void AcceptButton_Click(object sender, RoutedEventArgs e)
@@ -76,6 +76,8 @@ namespace WpfApp8_1
                 if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
                 {
                     MessageBox.Show("Введите логин и пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    ResetTimer();
+                    StartTimer();
                     return;
                 }
 
@@ -91,11 +93,15 @@ namespace WpfApp8_1
                 else
                 {
                     MessageBox.Show("Неверный логин или пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    ResetTimer();
+                    StartTimer();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка подключения к базе данных!\n{ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                ResetTimer();
+                StartTimer();
             }
         }
     }

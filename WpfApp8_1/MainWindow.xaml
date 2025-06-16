@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8_1"
         mc:Ignorable="d"
-        Title="Вход" Height="400" Width="300">
-    <Grid>
+        Title="Вход" Height="450" Width="300" Background="{x:Null}" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-6">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF3B3B3B" Offset="1"/>
                 <GradientStop Color="#FFBEBEBE" Offset="0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="AcceptButton" Content="Войти" HorizontalAlignment="Center" Height="70" Margin="0,237,0,0" VerticalAlignment="Top" Width="200" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
+        <Button x:Name="AcceptButton" Content="Войти" HorizontalAlignment="Center" Height="70" Margin="0,197,0,0" VerticalAlignment="Top" Width="200" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBEBEBE" Offset="0"/>
@@ -21,9 +21,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="Пароль:" HorizontalAlignment="Center" Height="44" Margin="0,148,0,0" VerticalAlignment="Top" Width="200" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
-        <Label Content="Логин:" HorizontalAlignment="Center" Height="44" Margin="0,59,0,0" VerticalAlignment="Top" Width="200" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
-        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Center" Height="40" Margin="0,192,0,0" VerticalAlignment="Top" Width="200" FontFamily="Cascadia Code" FontSize="36">
+        <Label Content="Пароль:" HorizontalAlignment="Center" Height="44" Margin="0,108,0,0" VerticalAlignment="Top" Width="200" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
+        <Label Content="Логин:" HorizontalAlignment="Center" Height="44" Margin="0,19,0,0" VerticalAlignment="Top" Width="200" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Center" Height="40" Margin="0,152,0,0" VerticalAlignment="Top" Width="200" FontFamily="Cascadia Code" FontSize="36">
             <PasswordBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBBBBBB" Offset="0"/>
@@ -31,7 +31,7 @@
                 </LinearGradientBrush>
             </PasswordBox.Background>
         </PasswordBox>
-        <TextBox x:Name="LoginBox" HorizontalAlignment="Center" Height="45" Margin="0,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Cascadia Code" FontSize="36">
+        <TextBox x:Name="LoginBox" HorizontalAlignment="Center" Height="45" Margin="0,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Cascadia Code" FontSize="36">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBBBBBB" Offset="0"/>
@@ -39,9 +39,9 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <Label Content="     !На вход отводится одна минута!" Height="44" Margin="0,307,0,0" VerticalAlignment="Top" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="12"/>
-        <Label Content="Время:" HorizontalAlignment="Left" Height="44" Margin="50,0,0,0" VerticalAlignment="Top" Width="100" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
-        <TextBox x:Name="TimerBox" HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontFamily="Cascadia Code" FontSize="36" Margin="150,0,0,0" IsReadOnly="True">
+        <Label Content="!На вход отводится одна минута!" Height="24" Margin="0,366,0,0" VerticalAlignment="Top" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="14" HorizontalContentAlignment="Center" Foreground="#FFFF4141"/>
+        <Label Content="Время:" HorizontalAlignment="Center" Height="44" Margin="0,272,0,0" VerticalAlignment="Top" Width="200" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24"/>
+        <TextBox x:Name="TimerBox" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="36" Margin="0,316,0,0" IsReadOnly="True" HorizontalAlignment="Center" Width="200">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBBBBBB" Offset="0"/>
