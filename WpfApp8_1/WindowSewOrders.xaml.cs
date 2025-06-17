@@ -23,5 +23,10 @@ namespace WpfApp8_1
         {
             InitializeComponent();
         }
+
+        private void AcceptButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

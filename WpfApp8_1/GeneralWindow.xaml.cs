@@ -54,5 +54,10 @@ namespace WpfApp8_1
             AdminUserControlWindow windowAdminUserControl = new AdminUserControlWindow();
             windowAdminUserControl.Show();
         }
+
+        private void TotalExit(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

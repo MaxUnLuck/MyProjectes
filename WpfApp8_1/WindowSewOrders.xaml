@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp8_1"
         mc:Ignorable="d"
         Title="WindowSewOrders" Height="450" Width="800">
-    <Grid Margin="0,0,0,-6">
+    <Grid Margin="0,0,0,0">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF3B3B3B" Offset="1"/>
@@ -33,24 +33,23 @@
             </DataGrid.Background>
         </DataGrid>
         <Label Content="Диспетчер:" HorizontalAlignment="Left" Margin="10,0,0,164" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <Label Content="Заказчик:" HorizontalAlignment="Left" Margin="10,510,0,0" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Top"/>
         <Label Content="Водитель:" HorizontalAlignment="Left" Margin="10,0,0,128" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
         <TextBox HorizontalAlignment="Left" Margin="154,0,0,200" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
         <TextBox HorizontalAlignment="Left" Margin="154,0,0,164" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
         <TextBox HorizontalAlignment="Left" Margin="154,0,0,128" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <Label Content="Дата начала:" HorizontalAlignment="Right" Height="30" Margin="0,0,135,200" VerticalAlignment="Bottom" Width="210" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
-        <Label Content="Дата конца:" HorizontalAlignment="Right" Height="30" Margin="0,0,135,164" VerticalAlignment="Bottom" Width="210" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
-        <Label Content="Дата оформления:" HorizontalAlignment="Right" Height="30" Margin="0,0,135,128" VerticalAlignment="Bottom" Width="210" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
-        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,0,10,200" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontFamily="Cascadia Code" FontSize="20"/>
-        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,0,10,164" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontFamily="Cascadia Code" FontSize="20"/>
-        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,0,10,128" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontFamily="Cascadia Code" FontSize="20"/>
+        <Label Content="Дата начала:" HorizontalAlignment="Right" Height="30" Margin="0,0,311,200" VerticalAlignment="Bottom" Width="210" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
+        <Label Content="Дата конца:" HorizontalAlignment="Right" Height="30" Margin="0,0,311,164" VerticalAlignment="Bottom" Width="210" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
+        <Label Content="Дата оформления:" HorizontalAlignment="Right" Height="30" Margin="0,0,311,128" VerticalAlignment="Bottom" Width="210" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
+        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,0,186,200" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontFamily="Cascadia Code" FontSize="20"/>
+        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,0,186,164" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontFamily="Cascadia Code" FontSize="20"/>
+        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,0,186,128" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontFamily="Cascadia Code" FontSize="20"/>
         <Label Content="id:" HorizontalAlignment="Left" Margin="10,0,0,80" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
         <Label Content="Статус:" HorizontalAlignment="Left" Margin="10,0,0,45" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="154,0,0,80" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" FontFamily="Cascadia Code" FontSize="20"/>
-        <RadioButton Content="Детское сиденье" Margin="0,0,10,45" VerticalAlignment="Bottom" FontSize="14" FontFamily="Cascadia Code" Height="30" HorizontalAlignment="Right" Width="158"/>
-        <RadioButton Content="Груз" Margin="0,0,10,10" FontSize="14" FontFamily="Cascadia Code" HorizontalAlignment="Right" Width="158" Height="30" VerticalAlignment="Bottom"/>
-        <RadioButton Content="Пассажиры" HorizontalAlignment="Right" Margin="0,0,10,77" VerticalAlignment="Bottom" FontSize="14" FontFamily="Cascadia Code" Height="30" Width="158"/>
-        <Label Content="Услуги:" HorizontalAlignment="Right" Height="30" Margin="0,0,173,80" VerticalAlignment="Bottom" Width="172" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
+        <RadioButton Content="Детское сиденье" Margin="0,0,186,45" VerticalAlignment="Bottom" FontSize="14" FontFamily="Cascadia Code" Height="30" HorizontalAlignment="Right" Width="158"/>
+        <RadioButton Content="Груз" Margin="0,0,186,10" FontSize="14" FontFamily="Cascadia Code" HorizontalAlignment="Right" Width="158" Height="30" VerticalAlignment="Bottom"/>
+        <RadioButton Content="Пассажиры" HorizontalAlignment="Right" Margin="0,0,186,77" VerticalAlignment="Bottom" FontSize="14" FontFamily="Cascadia Code" Height="30" Width="158"/>
+        <Label Content="Услуги:" HorizontalAlignment="Right" Height="30" Margin="0,0,349,80" VerticalAlignment="Bottom" Width="172" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20"/>
         <Label Content="Тип заказа:" HorizontalAlignment="Left" Margin="10,0,0,10" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
         <ComboBox HorizontalAlignment="Left" Margin="154,0,0,10" VerticalAlignment="Bottom" Width="120" Height="30" FontFamily="Cascadia Code" FontSize="20">
             <ComboBoxItem Content="Бизнес класс"/>
@@ -64,6 +63,22 @@
             <ComboBoxItem Content="Отменено"/>
         </ComboBox>
         <Label Content="Заказчик:" HorizontalAlignment="Left" Margin="10,0,0,199" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <Button x:Name="AcceptButton" Content="Выход" HorizontalAlignment="Left" Height="50" Margin="619,369,0,0" VerticalAlignment="Top" Width="171" FontFamily="Cascadia Code" FontSize="24" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBEBEBE" Offset="0"/>
+                    <GradientStop Color="#FF7C7C7C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="AcceptButton_Копировать" Content="Сохранить" HorizontalAlignment="Left" Height="50" Margin="619,314,0,0" VerticalAlignment="Top" Width="171" FontFamily="Cascadia Code" FontSize="24" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBEBEBE" Offset="0"/>
+                    <GradientStop Color="#FF7C7C7C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8_1"
         mc:Ignorable="d"
-        Title="GeneralWindow" Height="450" Width="800">
+        Title="GeneralWindow" Height="450" Width="800" ResizeMode="NoResize" Closed="TotalExit">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -21,7 +21,7 @@
                     <GradientStop Color="#FF6C6C6C" Offset="0"/>
                 </LinearGradientBrush>
             </Menu.Background>
-            <MenuItem x:Name="MenuLeave" Header="Выйти из учетная запись" Click="MenuItem_Click" FontWeight="Bold">
+            <MenuItem x:Name="MenuLeave" Header="Выйти из учетной записи" Click="MenuItem_Click" FontWeight="Bold">
                 <MenuItem.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF757575" Offset="1"/>

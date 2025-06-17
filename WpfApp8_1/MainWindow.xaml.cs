@@ -45,7 +45,7 @@ namespace WpfApp8_1
         }
         private void Timer_Tick(object sender, EventArgs e)
         {
-            TimerBox.Text = Convert.ToString(GetTimer());
+            TimerBox.Text = Convert.ToString(GetTimer() + " сек.");
         }
         public MainWindow()
         {
