@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8_1"
         mc:Ignorable="d"
-        Title="CreateOrderWindow" Height="300" Width="700" ResizeMode="NoResize">
+        Title="Создание заказа" Height="300" Width="700" ResizeMode="NoResize" Closed="isClosed">
     <Grid Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -42,7 +42,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="AcceptButton_Копировать" Content="Отмена" HorizontalAlignment="Left" Height="50" Margin="334,224,0,0" VerticalAlignment="Top" Width="150" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Копировать_Click" RenderTransformOrigin="0.516,0.531">
+        <Button x:Name="AcceptButton_Копировать" Content="Отмена" HorizontalAlignment="Right" Height="50" Margin="0,0,220,38" VerticalAlignment="Bottom" Width="150" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Копировать_Click" RenderTransformOrigin="0.516,0.531">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBEBEBE" Offset="0"/>
@@ -50,7 +50,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="AcceptButton_Копировать1" Content="Сохранить" HorizontalAlignment="Left" Height="50" Margin="489,225,0,0" VerticalAlignment="Top" Width="201" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Копировать_Click">
+        <Button x:Name="AcceptButton_Копировать1" Content="Сохранить" HorizontalAlignment="Right" Height="50" Margin="0,0,14,37" VerticalAlignment="Bottom" Width="201" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Копировать_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBEBEBE" Offset="0"/>

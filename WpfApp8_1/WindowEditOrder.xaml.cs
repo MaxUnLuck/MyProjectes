@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApp8_1
 {
     /// <summary>
-    /// Логика взаимодействия для CreateOrderWindow.xaml
+    /// Логика взаимодействия для WindowEditOrder.xaml
     /// </summary>
-    public partial class CreateOrderWindow : Window
+    public partial class WindowEditOrder : Window
     {
-        public CreateOrderWindow()
+        public WindowEditOrder()
         {
             InitializeComponent();
         }
@@ -29,15 +29,9 @@ namespace WpfApp8_1
             this.Close();
         }
 
-        private void AcceptButton_Click(object sender, RoutedEventArgs e)
-        {
-            //Сохранение
-            this.Close();
-        }
-
         private void isClosed(object sender, EventArgs e)
         {
-            CountOfWindowControl.Singelton().CreateOrder = false;
+            CountOfWindowControl.Singelton().EditOrder = false;
         }
     }
 }

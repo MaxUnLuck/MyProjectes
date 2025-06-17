@@ -73,3 +73,5 @@ D:\Users\1213-3\Documents\2-ИСПд\Сулейманов\КИС\Practice_8_1-2\
 D:\Users\1213-3\Documents\2-ИСПд\Сулейманов\КИС\Practice_8_1-2\MyProject\WpfApp8_1\obj\Debug\WpfApp8_1.csproj.CoreCompileInputs.cache
 D:\Users\1213-3\Documents\2-ИСПд\Сулейманов\КИС\Practice_8_1-2\MyProject\WpfApp8_1\obj\Debug\WpfApp8_1.exe
 D:\Users\1213-3\Documents\2-ИСПд\Сулейманов\КИС\Practice_8_1-2\MyProject\WpfApp8_1\obj\Debug\WpfApp8_1.pdb
+D:\Users\1213-3\Documents\2-ИСПд\Сулейманов\КИС\Practice_8_1-2\MyProject\WpfApp8_1\obj\Debug\WindowEditOrder.g.cs
+D:\Users\1213-3\Documents\2-ИСПд\Сулейманов\КИС\Practice_8_1-2\MyProject\WpfApp8_1\obj\Debug\WindowEditOrder.baml

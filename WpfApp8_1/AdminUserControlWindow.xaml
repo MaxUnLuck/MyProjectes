@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8_1"
         mc:Ignorable="d"
-        Title="AdminUserControlWindow" Height="450" Width="800">
+        Title="Администрирование ролей" Height="450" Width="800" Closed="isClosed">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -13,7 +13,7 @@
                 <GradientStop Color="#FFBEBEBE" Offset="0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=10}" Margin="10,10,10,237" IsReadOnly="True" BorderBrush="#FF565656" AutoGenerateColumns="False">
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=10}" Margin="10,10,10,113" IsReadOnly="True" BorderBrush="#FF565656" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id"/>
                 <DataGridTextColumn Header="Логин"/>
@@ -29,10 +29,10 @@
                 </LinearGradientBrush>
             </DataGrid.Background>
         </DataGrid>
-        <Label Content="Столбцы:" HorizontalAlignment="Left" Margin="15,0,0,202" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <TextBox HorizontalAlignment="Left" Margin="280,0,0,132" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <Label Content="Новое значение:" HorizontalAlignment="Left" Margin="15,0,0,132" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <ComboBox HorizontalAlignment="Left" Margin="280,0,0,202" VerticalAlignment="Bottom" Width="120" Height="30" FontFamily="Cascadia Code" FontSize="20">
+        <Label Content="Столбцы:" HorizontalAlignment="Left" Margin="15,0,0,78" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Left" Margin="280,0,0,8" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <Label Content="Новое значение:" HorizontalAlignment="Left" Margin="15,0,0,8" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <ComboBox HorizontalAlignment="Left" Margin="280,0,0,78" VerticalAlignment="Bottom" Width="120" Height="30" FontFamily="Cascadia Code" FontSize="20">
             <ComboBoxItem Content="id"/>
             <ComboBoxItem Content="Логин"/>
             <ComboBoxItem Content="Пароль"/>
@@ -40,7 +40,7 @@
             <ComboBoxItem Content="Роль"/>
             <ComboBoxItem Content="Удален"/>
         </ComboBox>
-        <Button x:Name="AcceptButton" Content="Готово" HorizontalAlignment="Right" Height="50" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
+        <Button x:Name="AcceptButton" Content="Выход" HorizontalAlignment="Right" Height="50" Margin="0,0,10,8" VerticalAlignment="Bottom" Width="150" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBEBEBE" Offset="0"/>
@@ -48,7 +48,15 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="id пользователя:" HorizontalAlignment="Left" Margin="15,0,0,167" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <TextBox HorizontalAlignment="Left" Margin="280,0,0,167" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <Label Content="id пользователя:" HorizontalAlignment="Left" Margin="15,0,0,43" Width="265" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Left" Margin="280,0,0,43" TextWrapping="Wrap" Width="120" FontFamily="Cascadia Code" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
+        <Button x:Name="AcceptButton_Копировать" Content="Сохранить" HorizontalAlignment="Right" Height="50" Margin="0,0,165,8" VerticalAlignment="Bottom" Width="204" FontFamily="Cascadia Code" FontSize="36" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBEBEBE" Offset="0"/>
+                    <GradientStop Color="#FF7C7C7C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

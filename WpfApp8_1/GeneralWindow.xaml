@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8_1"
         mc:Ignorable="d"
-        Title="GeneralWindow" Height="450" Width="800" ResizeMode="NoResize" Closed="TotalExit">
+        Title="Личный кабинет" Height="450" Width="800" ResizeMode="NoResize" Closed="TotalExit">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

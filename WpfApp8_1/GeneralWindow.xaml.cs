@@ -22,6 +22,7 @@ namespace WpfApp8_1
         public GeneralWindow()
         {
             InitializeComponent();
+            CountOfWindowControl.Singelton();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -33,26 +34,58 @@ namespace WpfApp8_1
 
         private void MenuSewOrder_Click(object sender, RoutedEventArgs e)
         {
-            WindowSewOrders windowSewOrders = new WindowSewOrders();
-            windowSewOrders.Show();
+            if (!CountOfWindowControl.Singelton().SewOrder)
+            {
+                WindowSewOrders windowSewOrders = new WindowSewOrders();
+                CountOfWindowControl.Singelton().SewOrder = true;
+                windowSewOrders.Show();
+            }
+            else
+            {
+                MessageBox.Show("Данное окно уже открыто!", "Обовещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         private void MenuCreateOrder_Click(object sender, RoutedEventArgs e)
         {
-            CreateOrderWindow windowCreateOrder = new CreateOrderWindow();
-            windowCreateOrder.Show();
+            if (!CountOfWindowControl.Singelton().CreateOrder)
+            {
+                CreateOrderWindow windowCreateOrder = new CreateOrderWindow();
+                CountOfWindowControl.Singelton().CreateOrder = true;
+                windowCreateOrder.Show();
+            }
+            else
+            {
+                MessageBox.Show("Данное окно уже открыто!", "Обовещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         private void MenuAboutProgram_Click(object sender, RoutedEventArgs e)
         {
-            AboutProgramWindow windowAboutProgram = new AboutProgramWindow();
-            windowAboutProgram.Show();
+            if (!CountOfWindowControl.Singelton().AboutProgram)
+            {
+                AboutProgramWindow windowAboutProgram = new AboutProgramWindow();
+                CountOfWindowControl.Singelton().AboutProgram = true;
+                windowAboutProgram.Show();
+            }
+            else
+            {
+                MessageBox.Show("Данное окно уже открыто!", "Обовещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         private void MenuAdministration_Click(object sender, RoutedEventArgs e)
         {
-            AdminUserControlWindow windowAdminUserControl = new AdminUserControlWindow();
-            windowAdminUserControl.Show();
+            if (!CountOfWindowControl.Singelton().AdminUserControl)
+            {
+                AdminUserControlWindow windowAdminUserControl = new AdminUserControlWindow();
+                CountOfWindowControl.Singelton().AdminUserControl = true;
+                windowAdminUserControl.Show();
+            }
+            else
+            {
+                MessageBox.Show("Данное окно уже открыто!", "Обовещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         private void TotalExit(object sender, EventArgs e)

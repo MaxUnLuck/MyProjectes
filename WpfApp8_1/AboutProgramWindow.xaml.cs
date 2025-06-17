@@ -23,5 +23,10 @@ namespace WpfApp8_1
         {
             InitializeComponent();
         }
+
+        private void isClosed(object sender, EventArgs e)
+        {
+            CountOfWindowControl.Singelton().AboutProgram = false;
+        }
     }
 }

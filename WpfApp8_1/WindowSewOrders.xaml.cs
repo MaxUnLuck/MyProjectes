@@ -28,5 +28,24 @@ namespace WpfApp8_1
         {
             this.Close();
         }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (!CountOfWindowControl.Singelton().EditOrder)
+            {
+                WindowEditOrder windowEditOrder = new WindowEditOrder();
+                CountOfWindowControl.Singelton().EditOrder = true;
+                windowEditOrder.Show();
+            }
+            else
+            {
+                MessageBox.Show("Данное окно уже открыто!", "Обовещение", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void isClosed(object sender, EventArgs e)
+        {
+            CountOfWindowControl.Singelton().SewOrder = false;
+        }
     }
 }

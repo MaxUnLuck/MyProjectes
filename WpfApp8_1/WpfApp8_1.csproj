@@ -61,8 +61,12 @@
     <Compile Include="AdminUserControlWindow.xaml.cs">
       <DependentUpon>AdminUserControlWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CountOfWindowControl.cs" />
     <Compile Include="CreateOrderWindow.xaml.cs">
       <DependentUpon>CreateOrderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowEditOrder.xaml.cs">
+      <DependentUpon>WindowEditOrder.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowSewOrders.xaml.cs">
       <DependentUpon>WindowSewOrders.xaml</DependentUpon>
@@ -98,6 +102,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowEditOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowSewOrders.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -28,5 +28,10 @@ namespace WpfApp8_1
         {
             this.Close();
         }
+
+        private void isClosed(object sender, EventArgs e)
+        {
+            CountOfWindowControl.Singelton().AdminUserControl = false;
+        }
     }
 }

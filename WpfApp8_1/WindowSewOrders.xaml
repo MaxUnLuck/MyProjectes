@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8_1"
         mc:Ignorable="d"
-        Title="WindowSewOrders" Height="450" Width="800">
+        Title="Просмотр" Height="450" Width="850" Closed="isClosed">
     <Grid Margin="0,0,0,0">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -63,7 +63,7 @@
             <ComboBoxItem Content="Отменено"/>
         </ComboBox>
         <Label Content="Заказчик:" HorizontalAlignment="Left" Margin="10,0,0,199" Width="139" TextBlock.FontFamily="Cascadia Code" TextBlock.FontSize="24" FontSize="20" Height="30" VerticalAlignment="Bottom"/>
-        <Button x:Name="AcceptButton" Content="Выход" HorizontalAlignment="Left" Height="50" Margin="619,369,0,0" VerticalAlignment="Top" Width="171" FontFamily="Cascadia Code" FontSize="24" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
+        <Button x:Name="AcceptButton" Content="Выход" HorizontalAlignment="Right" Height="50" Margin="0,0,10,11" VerticalAlignment="Bottom" Width="171" FontFamily="Cascadia Code" FontSize="24" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBEBEBE" Offset="0"/>
@@ -71,7 +71,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="AcceptButton_Копировать" Content="Сохранить" HorizontalAlignment="Left" Height="50" Margin="619,314,0,0" VerticalAlignment="Top" Width="171" FontFamily="Cascadia Code" FontSize="24" Foreground="Black" BorderBrush="Black" Click="AcceptButton_Click">
+        <Button x:Name="AcceptButton_Edit" Content="Изменить" Margin="0,0,10,66" FontFamily="Cascadia Code" FontSize="24" Foreground="Black" BorderBrush="Black" Click="EditButton_Click" HorizontalAlignment="Right" Width="171" Height="50" VerticalAlignment="Bottom">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFBEBEBE" Offset="0"/>
