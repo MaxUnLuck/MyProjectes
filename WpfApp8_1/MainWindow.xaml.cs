@@ -97,8 +97,70 @@ namespace WpfApp8_1
                     return;
                 }
 
+                if (password.Length < 8)
+                {
+                    MessageBox.Show("Пароль не менее 8 символов!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    ResetTimer();
+                    StartTimer();
+                    password = string.Empty;
+                    return;
+                }
+
+                if (password.Length > 32)
+                {
+                    MessageBox.Show("Пароль не больше 32 символов!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    ResetTimer();
+                    StartTimer();
+                    password = string.Empty;
+                    return;
+                }
+
+                bool isLetter = false;
+                bool isNumber = false;
+                for (int i = 0; i < password.Length; i++)
+                {
+                    if ((password[i] >= 48 && password[i] <= 57) || password[i] >= 65 && password[i] <= 90 || password[i] >= 97 && password[i] <= 122) // проверка на разрешенные символы
+                    {
+                        if (password[i] >= 48 && password[i] <= 57)
+                        {
+                            isNumber = true;
+                        }
+                        if (password[i] >= 65 && password[i] <= 90 || password[i] >= 97 && password[i] <= 122)
+                        {
+                            isLetter = true;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Пароль не должен содержать символы кроме цифр и латинского алфавита!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        ResetTimer();
+                        StartTimer();
+                        password = string.Empty;
+                        return;
+                    }
+                }
+
+                if (!isLetter)
+                {
+                    MessageBox.Show("Пароль не содержит букв!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    ResetTimer();
+                    StartTimer();
+                    password = string.Empty;
+                    return;
+                }
+
+                if (!isNumber)
+                {
+                    MessageBox.Show("Пароль не содержит цифр!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    ResetTimer();
+                    StartTimer();
+                    password = string.Empty;
+                    return;
+                }
+
+
                 // Имитация проверки данных в БД
-                if (login == "admin" && password == "12345")
+                if (login == "admin" && password == "GG343430")
                 {
                     MessageBox.Show($"Успешная авторизация, за {GetTimer()} секунд!", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
 
@@ -111,6 +173,7 @@ namespace WpfApp8_1
                     MessageBox.Show("Неверный логин или пароль!", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Error);
                     ResetTimer();
                     StartTimer();
+                    password = string.Empty;
                 }
             }
             catch (Exception ex)
